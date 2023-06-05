@@ -1,8 +1,6 @@
 .App {
   width: 100vw;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
 }
 
 #light {
@@ -25,12 +23,12 @@
   color: #fff;
   transition: 2s;
 }
-#light .navbar {
+#light .nav-bar {
   background-color: #fff !important;
   color: #121212;
   transition: 2s;
 }
-#dark .navbar {
+#dark .nav-bar {
   background-color: #242424 !important;
   color: #fff;
   transition: 2s;
@@ -46,10 +44,32 @@
 }
 
 #light .icon > div {
-  color: #fff;
+  color: grey;
   transition: 2s;
 }
 #dark .icon > div {
-  color: #fff;
+  color: grey;
   transition: 2s;
 }
+
+#dark .sidebar-header {
+color: #fff
+}
+#light .sidebar-header{
+  color: #fff
+}
+
+#light .socail-icon  a  {
+  color: #121212;
+}
+#dark .socail-icon  a {
+  color: #fff
+  }
+  #light .socail-icon    {
+    color: #121212;
+  }
+  #dark .socail-icon   {
+    color: #fff
+    }
+    
+  

@@ -1,0 +1,25 @@
+.word{
+    font-size: 48px;
+}
+.overlay{
+    width: 300px;
+}
+.my-pic{
+    width: 530px;
+    /* border-radius: 30%; */
+   transform: translate(-100px , -100px);
+   overflow: hidden;
+}
+.line{
+    color: black;
+    height: 5px;
+}
+/* @media screen and (max-width: 450px) {
+    .my-pic {
+        transform: translate(-100px , -400px);
+        margin-top: 100px;
+    }
+    .overlay{
+        margin-top: 100px;
+    }
+} */

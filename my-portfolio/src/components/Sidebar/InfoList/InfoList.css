@@ -1,0 +1,16 @@
+.list-btn{
+    color: grey;
+    border: none;
+    background: none;
+}
+.list-btn:hover{
+    color: #1BAA80;
+    border-radius: 4px;
+    opacity: 0.5px;
+}
+.icon{
+    color: grey;
+}
+.icon:hover {
+    color: #1BAA80
+}
