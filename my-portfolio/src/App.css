@@ -1,3 +1,6 @@
+body {
+  font-family: Poppins, sans-serif;
+}
 .App {
   width: 100vw;
   height: 100vh;
@@ -53,23 +56,28 @@
 }
 
 #dark .sidebar-header {
-color: #fff
+  color: #fff;
 }
-#light .sidebar-header{
-  color: #fff
+#light .sidebar-header {
+  color: #fff;
 }
 
-#light .socail-icon  a  {
+#light .socail-icon a {
   color: #121212;
 }
-#dark .socail-icon  a {
-  color: #fff
-  }
-  #light .socail-icon    {
-    color: #121212;
-  }
-  #dark .socail-icon   {
-    color: #fff
-    }
-    
-  
+#dark .socail-icon a {
+  color: #fff;
+}
+#light .socail-icon {
+  color: #121212;
+}
+#dark .socail-icon {
+  color: #fff;
+}
+
+#light .line {
+  background-color: #121211 !important;
+}
+#dark .line {
+  background-color: #fff !important;
+}

@@ -1,26 +1,32 @@
-.word{
-    font-size: 48px;
+.word {
+  height: 75px;
+  display: flex;
+  align-items: center;
+  font-size: 28px;
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
 }
-.overlay{
-    /* width: 300px; */
-    height: 260px;
-
+.line {
+  background-color: #121211;
+  height: 3px;
 }
-.my-pic{
-    width: 730px;
-   transform: translate(-330px , -90px);
-   overflow: hidden;
+.btn-hire {
+  border-color: #20c997;
+  color: #20c997;
+  font-weight: 600;
+  padding: 0.8rem 2.6rem;
+  /* transition: all 0.5s ease-in; */
+  background: none;
+  border-radius: 50rem;
+  border: 2px solid #20c997;
 }
-.line{
-    color: black;
-    height: 5px;
+.hire :hover {
+  background-color: #20c997;
+  transition: all 0.1s ease;
+  border-radius: 50rem;
+  font-weight: 600;
+  color: #fff;
 }
-/* @media screen and (max-width: 450px) {
-    .my-pic {
-        transform: translate(-100px , -400px);
-        margin-top: 100px;
-    }
-    .overlay{
-        margin-top: 100px;
-    }
-} */
+.hire {
+  border-color: #20c997;
+}

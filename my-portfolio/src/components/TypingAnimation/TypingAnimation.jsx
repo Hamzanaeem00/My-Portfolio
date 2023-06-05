@@ -1,12 +1,11 @@
-import React, { useEffect, useState } from 'react';
-import './TypingAnimation.css'
-import Pic from '../../assets/picture.png'
-import SidePic from '../../assets/slider-overlay.png'
-
+import React, { useEffect, useState } from "react";
+import "./TypingAnimation.css";
+import picture from "../../assets/pictures.png";
+import { Link } from "react-router-dom";
 
 const TypingAnimation = () => {
-  const words = ['Hi I am Hamza Naeem', 'I am Frontend Developer!', ];
-  const [text, setText] = useState('');
+  const words = ["I'm Hamza Naeem Khan", "I'm Frontend Developer!"];
+  const [text, setText] = useState("");
   const [i, setI] = useState(0);
   const [offset, setOffset] = useState(0);
   const [forwards, setForwards] = useState(true);
@@ -31,43 +30,45 @@ const TypingAnimation = () => {
           setOffset(0);
         }
       }
-      const part = words[i].substr(0, offset);
+      const part = words[i].substring(0, offset);
       if (skipCount === 0) {
         if (forwards) {
           setOffset(offset + 1);
         } else {
-            setOffset(offset - 1);
-          }
+          setOffset(offset - 1);
         }
-        setText(part);
-      }, speed);
-      return () => clearInterval(interval);
-    }, [words, i, offset, forwards, skipCount]);
-    return (
-        <div >
-            <div className='mx-5'>
-                <h3>
-                Welcome                   
-                </h3>
-            </div>
-            <div className='row '>
-        <div className='col-lg-4 col-md-12 col-sm-12'>
-          <h1  className="word my-5">{text}</h1>
+      }
+      setText(part);
+    }, speed);
+    return () => clearInterval(interval);
+  }, [words, i, offset, forwards, skipCount]);
+
+  return (
+    <div>
+      <div className="row">
+        <div className="col-lg-8 col-md-12 col-sm-12">
+          <h4 className="">Welcome 👋</h4>
+          <span className="word ">{text}</span>
+          <div>
+            <h4 className="">based in Pakistan, Karachi </h4>
+          </div>
+          <div className=" mt-5 hire">
+            <Link style={{ textDecoration: "none" }} to="/contact">
+              <button className="btn-hire">Hire Me</button>
+            </Link>
+          </div>
         </div>
-
-        <div className=' col-lg-8 col-md-12 col-sm-12 '>
-            <div className='row'>
-                <img className='overlay image-fluid col-lg-5' style={{width:"300px"}}   src={SidePic} alt=""  />
-                <img className='my-pic image-fluid col-lg-7'  src={Pic} alt="" />
-            </div>
-                <div className='line w-100'>
-            </div>
-            </div>
-            </div>
-            
-
+        <div className=" col-lg-4 col-md-12 col-sm-12 ">
+          <img
+            src={picture}
+            className="img-fluid"
+            alt=""
+            style={{ width: "400px" }}
+          />
         </div>
-      );
-    };
-    export default TypingAnimation;
-
+      </div>
+      <div className="line"></div>
+    </div>
+  );
+};
+export default TypingAnimation;
