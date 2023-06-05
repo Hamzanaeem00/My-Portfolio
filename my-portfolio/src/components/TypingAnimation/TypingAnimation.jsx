@@ -51,18 +51,14 @@ const TypingAnimation = () => {
                 </h3>
             </div>
             <div className='row '>
-        <div className='col-lg-6 col-md-12 col-sm-12'>
+        <div className='col-lg-4 col-md-12 col-sm-12'>
           <h1  className="word my-5">{text}</h1>
         </div>
 
-        <div className=' col-lg-6 col-md-12 col-sm-12 '>
+        <div className=' col-lg-8 col-md-12 col-sm-12 '>
             <div className='row'>
-            <div className='col-lg-1 col-md-1 col-sm-3'>
-                <img className='overlay image-fluid' src={SidePic} alt=""  />
-            </div>
-            <div className='col-lg-1 col-md-2 col-sm-3'>
-                <img className='my-pic image-fluid' src={Pic} alt="" />
-            </div>
+                <img className='overlay image-fluid col-lg-5' style={{width:"300px"}}   src={SidePic} alt=""  />
+                <img className='my-pic image-fluid col-lg-7'  src={Pic} alt="" />
             </div>
                 <div className='line w-100'>
             </div>
