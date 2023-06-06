@@ -1,6 +1,23 @@
 .about-me {
   font-weight: 1000;
-  font-size: 60px;
+  font-size: 75px;
+  letter-spacing: 15px;
+  display: flex;
   opacity: 0.5;
-  letter-spacing: 5px;
+  justify-content: center;
+  color: #dee3e4;
+}
+.know-me{
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-top: 2rem;
+
+}
+.name{
+  color: #20C997;
+  font-weight: 600;
+}
+.para{
+  font-size: 15px;
 }

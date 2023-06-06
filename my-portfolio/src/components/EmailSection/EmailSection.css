@@ -1,0 +1,13 @@
+.list-style{
+    padding: 0px;
+}
+.list-style >li {
+    border-bottom: 1px solid #eaeaea;
+    list-style-type: none;
+    padding-bottom: 12px;
+    padding-top: 12px;
+}
+.email{
+    color: #1BAA80;
+    text-decoration: none;
+}
