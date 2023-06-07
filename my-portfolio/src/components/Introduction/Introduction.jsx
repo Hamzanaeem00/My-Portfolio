@@ -6,36 +6,46 @@ import Achievements from "../Achievements/Achievements";
 const Introduction = () => {
   return (
     <div>
-      <div className="row">
-      <span className="about-me col-lg-12 col-md-12 col-sm-none w-100 ">ABOUT ME</span>
-      <p className=" know-me w-100 text-center my-4 position-relative" style={{bottom:"100px"}}>Know Me More
-      <p className="  border-bottom border-3 border-success mx-auto" style={{width:"80px"}}></p>
-       </p>
+      <div className="">
+        <span className="about-me  w-100 mb-0">ABOUT ME</span>
+        <p
+          className=" know-me w-100 text-center mb-0 mt-3"
+          style={{ bottom: "100px" }}
+        >
+          Know Me More
+          <p
+            className="  border-bottom border-3 border-success mx-auto"
+            style={{ width: "80px" }}
+          ></p>
+        </p>
       </div>
 
-      <div className="row ">
-      <div className="intro col-lg-8 col-md-7 col-sm-12">
-        <h2>
-          I'm 
-          <span className="name mx-2 ">
-             Hamza Naeem Khan
-          </span>
-           a Web Developer
-        </h2>
-        <p className="para ">
-        Experienced Frontend React.js Developer with 1+ years of expertise and a proven track record of meeting deadlines and exceeding expectations. Successfully completed over 7 projects, showcasing proficiency in React.js, HTML, CSS, and JavaScript. A dedicated learner, always seeking to adopt new skills and technologies.
-        </p>
-        <p className="para">
-        Collaborative and adaptable, committed to delivering high-quality work that aligns with business objectives. Passionate about creating engaging user interfaces and staying up-to-date with industry best practices. Ready to contribute expertise to drive innovation and success in future projects.
-        </p>
+      <div className="row justify-content-center">
+        <div className="intro col-lg-6 col-md-12 col-sm-12">
+          <h2 className="fw-bold">
+            I'm
+            <span className="name mx-2 ">Hamza Naeem Khan,</span>a Web Developer
+          </h2>
+          <p className="para mt-3 ">
+            Experienced Frontend React.js Developer with 1+ years of expertise
+            and a proven track record of meeting deadlines and exceeding
+            expectations. Successfully completed over 7 projects, showcasing
+            proficiency in React.js, HTML, CSS, and JavaScript. A dedicated
+            learner, always seeking to adopt new skills and technologies.
+          </p>
+          <p className="para">
+            Collaborative and adaptable, committed to delivering high-quality
+            work that aligns with business objectives. Passionate about creating
+            engaging user interfaces and staying up-to-date with industry best
+            practices. Ready to contribute expertise to drive innovation and
+            success in future projects.
+          </p>
+        </div>
+        <div className="col-lg-6 col-md-12 col-sm-12 mt-3">
+          <EmailSection />
+        </div>
       </div>
-      <div className="col-lg-4 col-md-5 col-sm-12">
-        <EmailSection />
-      </div>
-      </div>
-      <div>
-        <Achievements />
-      </div>
+      <Achievements />
     </div>
   );
 };

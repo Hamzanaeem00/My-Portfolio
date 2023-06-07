@@ -1,9 +1,9 @@
 .featured-box {
-    box-sizing: border-box;
-    position: relative;
-    border-right: 1px solid  #8080803d
+  box-sizing: border-box;
+  position: relative;
+  border-right: 1px solid #8080803d;
 }
-.featured-box > h4{
-font-size: 36px;
-font-weight: 1000;
+.featured-box > h4 {
+  font-size: 36px;
+  font-weight: 1000;
 }
