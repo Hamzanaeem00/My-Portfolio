@@ -43,7 +43,6 @@ const Introduction = () => {
       <div>
         <Achievements />
       </div>
-      <Achievements />
     </div>
   );
 };
