@@ -9,8 +9,7 @@ const Introduction = () => {
       <div className="">
         <span className="about-me  w-100 mb-0">ABOUT ME</span>
         <p
-          className=" know-me w-100 text-center mb-0 mt-3"
-          style={{ bottom: "100px" }}
+          className=" know-me w-100 text-center mb-0 mt-3 position-sticky bottom-100"
         >
           Know Me More
           <p
@@ -22,7 +21,7 @@ const Introduction = () => {
 
       <div className="row ">
       <div className="intro col-lg-8 col-md-12 col-sm-12">
-        <h2>
+        <h2 className="fw-bold">
           I'm 
           <span className="name mx-2 ">
              Hamza Naeem Khan
