@@ -6,11 +6,18 @@ import Achievements from "../Achievements/Achievements";
 const Introduction = () => {
   return (
     <div>
-      <div className="row">
-      <span className="about-me col-lg-12 col-md-12 col-sm-none w-100 ">ABOUT ME</span>
-      <p className=" know-me w-100 text-center my-4 position-relative" style={{bottom:"100px"}}>Know Me More
-      <p className="  border-bottom border-3 border-success mx-auto" style={{width:"80px"}}></p>
-       </p>
+      <div className="">
+        <span className="about-me  w-100 mb-0">ABOUT ME</span>
+        <p
+          className=" know-me w-100 text-center mb-0 mt-3"
+          style={{ bottom: "100px" }}
+        >
+          Know Me More
+          <p
+            className="  border-bottom border-3 border-success mx-auto"
+            style={{ width: "80px" }}
+          ></p>
+        </p>
       </div>
 
       <div className="row ">
@@ -36,6 +43,7 @@ const Introduction = () => {
       <div>
         <Achievements />
       </div>
+      <Achievements />
     </div>
   );
 };

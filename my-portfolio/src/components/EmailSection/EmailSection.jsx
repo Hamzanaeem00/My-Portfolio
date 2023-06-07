@@ -1,5 +1,5 @@
-import React from 'react'
-import './EmailSection.css'
+import React from "react";
+import "./EmailSection.css";
 const EmailSection = () => {
   return (
     <div>
@@ -11,7 +11,7 @@ const EmailSection = () => {
         <li><span className='fs-5 fw-bold'>From: </span>Karachi, Pakistan</li>
       </ul>
     </div>
-  )
-}
+  );
+};
 
-export default EmailSection
+export default EmailSection;
