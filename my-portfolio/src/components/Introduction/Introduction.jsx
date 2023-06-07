@@ -14,7 +14,7 @@ const Introduction = () => {
       </div>
 
       <div className="row ">
-      <div className="intro col-lg-8 col-md-7 col-sm-12">
+      <div className="intro col-lg-8 col-md-12 col-sm-12">
         <h2>
           I'm 
           <span className="name mx-2 ">
@@ -29,7 +29,7 @@ const Introduction = () => {
         Collaborative and adaptable, committed to delivering high-quality work that aligns with business objectives. Passionate about creating engaging user interfaces and staying up-to-date with industry best practices. Ready to contribute expertise to drive innovation and success in future projects.
         </p>
       </div>
-      <div className="col-lg-4 col-md-5 col-sm-12">
+      <div className="col-lg-4 col-md-12 col-sm-12">
         <EmailSection />
       </div>
       </div>

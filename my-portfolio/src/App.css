@@ -47,6 +47,8 @@ body {
 #dark .main {
   color: #fff;
   transition: 2s;
+  background-color: #242424;
+
 }
 
 #light .icon > div {
