@@ -1,0 +1,33 @@
+.tech-logo{
+    width: 45px;
+    height: 45px;
+}
+
+.work-exp{
+ border-radius: 8px;
+ box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+}
+@keyframes drop {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .picture {
+    animation: drop 1.5s ease-in-out;
+  }
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }

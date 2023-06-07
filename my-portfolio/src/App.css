@@ -90,3 +90,17 @@ body {
 #dark .featured-box > h4 {
   color: #b7b4b4 !important;
 }
+
+#dark .company-exp :hover{
+  background-color: rgb(44, 44, 44);
+  transition: 0.8s  ease-out;
+  border-radius: 8px;
+  cursor: pointer;
+  
+}
+#light .company-exp :hover{
+  background-color: #eaeaea;
+  transition: 0.8s ease-in;
+  border-radius: 8px;
+  cursor: pointer;
+}
