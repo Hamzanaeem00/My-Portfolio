@@ -21,7 +21,7 @@ const Introduction = () => {
       </div>
 
       <div className="row justify-content-center">
-        <div className="intro col-lg-6 col-md-12 col-sm-12">
+        <div className="intro col-lg-9 col-md-12 col-sm-12">
           <h2 className="fw-bold">
             I'm
             <span className="name mx-2 ">Hamza Naeem Khan,</span>a Web Developer
@@ -41,7 +41,7 @@ const Introduction = () => {
             success in future projects.
           </p>
         </div>
-        <div className="col-lg-6 col-md-12 col-sm-12 mt-3">
+        <div className="col-lg-3 col-md-12 col-sm-12 mt-3">
           <EmailSection />
         </div>
       </div>
