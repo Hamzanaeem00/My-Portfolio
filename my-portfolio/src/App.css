@@ -112,11 +112,6 @@ body {
   color: #fff;
 }
 
-/* #light .tech-logos :hover{
-  background-color: rgb(0, 0, 0);
-  opacity: 0.;
-  transition: 0.5s ease;
-} */
 #light .percentage:hover {
 color: #fff ;
 background-color: #121211 !important;
@@ -124,3 +119,4 @@ background-color: #121211 !important;
 #dark .tech-stack{
   border: 2px solid rgb(253, 251, 251);
 }
+

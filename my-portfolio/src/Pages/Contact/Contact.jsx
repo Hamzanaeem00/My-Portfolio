@@ -1,7 +1,13 @@
 import React from "react";
 
 const Contact = () => {
-  return <div id="contact">Contact</div>;
+  return (
+    <div>
+      <div>
+        <span className="experiences w-100 mb-0">CONTACT</span>
+      </div>
+    </div>
+  )
 };
 
 export default Contact;

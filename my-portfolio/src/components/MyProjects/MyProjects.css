@@ -1,0 +1,20 @@
+ .ant-modal-content{
+    background-color: transparent !important ;
+ }
+ .ant-modal-title{
+    background-color: transparent !important;
+    color: none !important;
+ }
+ .ant-modal-header{
+    background: transparent !important;
+ color: #dee3e4 !important;
+ }
+ .ant-modal{
+    font-family: Poppins, sans-serif !important;
+    padding-bottom: 0px !important;
+    border-radius: 8px !important
+ }
+
+ .ant-modal-footer{
+    display: none !important;
+ }

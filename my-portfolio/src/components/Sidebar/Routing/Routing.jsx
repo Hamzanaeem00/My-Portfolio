@@ -9,12 +9,12 @@ import About from '../../../Pages/About/About'
 
 
 
-const Routing = () => {
+const Routing = ({theme}) => {
   return (
     <div>
        <Routes>
             <Route path="/" element = {<Home />} ></Route>
-            <Route path="/projects" element = {<Projects />} ></Route>
+            <Route path="/projects" element = {<Projects theme={theme} />} ></Route>
             <Route path="/skills" element = {<Skills />} ></Route>
             <Route path="/experience" element = {<Exprience />} ></Route>
             <Route path="/contact" element = {<Contact />} ></Route>

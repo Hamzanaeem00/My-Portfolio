@@ -135,7 +135,7 @@ function Sidebar(props) {
         sx={{ flexGrow: 1, p: 3, width: { sm: `calc(100% - ${drawerWidth}px)` } }}
       >
         <Toolbar />
-        <Routing />
+        <Routing theme={props.theme} />
       </Box>
     </Box>
   );
