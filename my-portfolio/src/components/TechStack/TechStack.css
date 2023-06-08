@@ -1,0 +1,48 @@
+
+.tech-logos{
+    position: relative;
+    cursor: pointer;
+    border-radius: 50rem;
+    width: 80px;
+    height: 80px;
+    
+}
+.tech-stack{
+    height: 80px;
+    width: 80px;
+    border: 1px solid black;
+    border-radius: 50rem;
+}
+.percentage{
+    display: flex;
+    justify-content: center;
+    display: none;
+    position: absolute;
+    top: 0px;
+    border-radius: 50rem;
+    height: 80px;
+    width: 80px;
+    background: none !important;
+}
+.percentage:hover {
+    display: flex !important;
+    align-items: center;
+}
+.percentage:hover .tech-logos{
+    background-color: #ffffff;
+}
+
+.tech-logos :hover{
+   background-color: #ffffff !important;
+   opacity: 0.7;
+}
+.tech-logos:hover .tech-stack{
+    opacity: 0.5 ;
+}
+ 
+
+.tech-logos:hover .percentage{
+    display: block;
+}
+
+

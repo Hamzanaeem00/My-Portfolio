@@ -26,8 +26,3 @@
   .picture {
     animation: drop 1.5s ease-in-out;
   }
-  .tooltip {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black;
-  }
