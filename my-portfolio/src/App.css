@@ -119,4 +119,7 @@ background-color: #121211 !important;
 #dark .tech-stack{
   border: 2px solid rgb(253, 251, 251);
 }
+#dark .project-image{
+  border:  2px solid #fff;
+}
 

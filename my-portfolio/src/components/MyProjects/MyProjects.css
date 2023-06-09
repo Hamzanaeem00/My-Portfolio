@@ -12,9 +12,40 @@
  .ant-modal{
     font-family: Poppins, sans-serif !important;
     padding-bottom: 0px !important;
-    border-radius: 8px !important
+    border-radius: 8px !important;
+    /* transform: translate(112px, 0px); */
+ }
+ .ant-modal-wrap{
+    z-index: 1350 !important;
  }
 
  .ant-modal-footer{
     display: none !important;
  }
+
+ .project-image{
+    width: 325px;
+    height: 200px;
+    border: 2px solid rgb(248, 247, 247);
+    border-radius: 12px;
+ }
+ .project-image:hover{
+    cursor: pointer;
+    opacity: 0.5;
+ }
+.silk-dots li {
+    font-size: 36px;
+    cursor: pointer;
+    height: auto;
+    margin: 0;
+    width: auto;
+    color: grey;
+}
+
+.portfolio  > img{
+    border-radius: 12px;
+}
+.li-btn{
+color: #20C997 !important;
+
+}
