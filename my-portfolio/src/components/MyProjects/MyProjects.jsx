@@ -16,7 +16,9 @@ import menu1 from "../../assets/menu1.png";
 import menu2 from "../../assets/menu2.png";
 import music from "../../assets/music.png";
 import music1 from "../../assets/music1.png";
-
+import todo from "../../assets/todo1.png";
+import todo1 from "../../assets/todo2.png";
+import todo2 from "../../assets/todo3.png";
 
 
 
@@ -85,6 +87,20 @@ const MyProjects = ({ theme }) => {
         image1: <img className="image-fluid w-100 " src={menu} alt="" />,
         image3: <img className="image-fluid w-100 " src={menu1} alt="" />,
         image2: <img className="image-fluid w-100 " src={menu2} alt="" />,
+      } ] } ,
+      {
+        id: 6,
+        projectImage:  <img src={todo} alt="" className="image-fluid project-image" />,
+        projectTitle: "TODO PROJECT",
+        ProjectDetails: [ 
+          {
+        ProjectInfo: 'This is a TODO LIST App In which you can 1-Add Task 2-Update Task 3-Delete Task And funfact you can not add same task again it will show the alert "Duplicate Task Found"',
+        Technologies: "React.js, HTML5, CSS3 ",
+        Industry: "Web Development",
+        URL: "https://gorgeous-rabanadas-a5c441.netlify.app/",
+        image1: <img className="image-fluid w-100 " src={todo} alt="" />,
+        image3: <img className="image-fluid w-100 " src={todo1} alt="" />,
+        image2: <img className="image-fluid w-100 " src={todo2} alt="" />,
       } ] } ,
       {
         id: 5,
