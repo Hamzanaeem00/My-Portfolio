@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./TypingAnimation.css";
 import picture from "../../assets/pictures.png";
 import { Link } from "react-router-dom";
+import DownloadResume from "../DownloadResume/DownloadResume";
 
 const TypingAnimation = () => {
   const words = ["I'm Hamza Naeem Khan", "I'm Frontend Developer!"];
@@ -43,6 +44,8 @@ const TypingAnimation = () => {
     return () => clearInterval(interval);
   }, [words, i, offset, forwards, skipCount]);
 
+
+
   return (
     <div>
       <div className="row">
@@ -52,11 +55,15 @@ const TypingAnimation = () => {
           <div>
             <h4 className="">based in Pakistan, Karachi </h4>
           </div>
+          <div className="d-flex"> 
           <div className=" mt-5 hire">
             <Link style={{ textDecoration: "none" }} to="/contact">
               <button className="btn-hire">Hire Me</button>
             </Link>
           </div>
+          <DownloadResume />
+          </div>
+         
         </div>
         <div className=" col-lg-4 col-md-12 col-sm-12 ">
           <img
