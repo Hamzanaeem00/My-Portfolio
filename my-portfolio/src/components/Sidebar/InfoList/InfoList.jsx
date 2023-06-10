@@ -5,7 +5,7 @@ import AssistantIcon from "@mui/icons-material/Assistant";
 import EngineeringIcon from "@mui/icons-material/Engineering";
 import EmailIcon from "@mui/icons-material/Email";
 import BungalowIcon from "@mui/icons-material/Bungalow";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./InfoList.css";
 
 const list = [
@@ -48,11 +48,24 @@ const list = [
   },
 ];
 const InfoList = () => {
+  const location = useLocation();
+  var display = {
+    backgroundColor: "#19AA80",
+    color: "#19AA80",
+    height: "45px",
+    borderRadius: "4px",
+    padding: "8px",
+  };
+
   return (
     <div>
       {list?.map((item, i) => {
         return (
-          <div key={item.id} className="my-4">
+          <div
+            key={item.id}
+            className="my-4"
+            style={location.pathname === item.url ? display : {}}
+          >
             <Link to={item.url}>
               <button className="list-btn">
                 <i className="mx-3 icon"> {item.icon}</i>

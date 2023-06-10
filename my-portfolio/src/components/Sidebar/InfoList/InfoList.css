@@ -1,16 +1,16 @@
-.list-btn{
-    color: grey;
-    border: none;
-    background: none;
+.list-btn {
+  color: #dee2e6;
+  border: none;
+  background: none;
 }
-.list-btn:hover{
-    color: #1BAA80;
-    border-radius: 4px;
-    opacity: 0.5px;
+.list-btn:hover {
+  color: #1baa80;
+  border-radius: 4px;
+  opacity: 0.5px;
 }
-.icon{
-    color: grey;
+.icon {
+  color: #dee2e6;
 }
 .icon:hover {
-    color: #1BAA80
+  color: #1baa80;
 }
