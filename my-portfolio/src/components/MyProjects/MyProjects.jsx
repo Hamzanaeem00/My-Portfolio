@@ -230,7 +230,9 @@ const MyProjects = ({ theme }) => {
                         <div className="col-lg-6 col-md-6 col-sm-12">
                           <div className="mt-4">
                             <h4>Project Info</h4>
-                            <p className="mx-2 ">{item.ProjectInfo}</p>
+                            <p className="mx-2 model-para ">
+                              {item.ProjectInfo}
+                            </p>
                           </div>
                           <div className="d-flex mt-4 border-bottom">
                             <h5>Technologies:</h5>
