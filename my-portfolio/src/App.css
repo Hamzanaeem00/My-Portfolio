@@ -1,5 +1,7 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
 body {
-  font-family: Poppins, sans-serif !important;
+  /* font-family: Poppins, sans-serif !important; */
   color: #4c4d4d !important;
   margin: 0px !important;
   padding: 0px !important;
@@ -49,7 +51,6 @@ body {
   color: #fff;
   transition: 2s;
   background-color: #242424;
-
 }
 
 #light .icon > div {
@@ -91,35 +92,36 @@ body {
   color: #b7b4b4 !important;
 }
 
-#dark .company-exp :hover{
+#dark .company-exp :hover {
   background-color: rgb(44, 44, 44);
-  transition: 0.8s  ease-out;
+  transition: 0.8s ease-out;
   border-radius: 8px;
   cursor: pointer;
-  
 }
-#light .company-exp :hover{
+#light .company-exp :hover {
   background-color: #eaeaea;
   transition: 0.8s ease-in;
   border-radius: 8px;
   cursor: pointer;
 }
 
-#dark .percentage{
-   color: black;
+#dark .percentage {
+  color: black;
 }
-#light .percentage{
+#light .percentage {
   color: #fff;
 }
 
 #light .percentage:hover {
-color: #fff ;
-background-color: #121211 !important;
+  color: #fff;
+  background-color: #121211 !important;
 }
-#dark .tech-stack{
+#dark .tech-stack {
   border: 2px solid rgb(253, 251, 251);
 }
-#dark .project-image{
-  border:  2px solid #fff;
+#dark .project-image {
+  border: 2px solid #fff;
 }
-
+#dark .para {
+  font-weight: 100 !important;
+}

@@ -172,10 +172,10 @@ const MyProjects = ({ theme }) => {
   };
 
   return (
-    <div className="row justify-content-around">
+    <div className="d-flex flex-wrap justify-content-around">
       {ProjectsArray?.map((projects, index) => {
         return (
-          <div key={project.id} className="col-lg-4 col-md-8 col-sm-12 mt-2">
+          <div key={project.id}>
             <div className="projects" onClick={() => showModal(index)}>
               <p>{projects.projectImage}</p>
             </div>
