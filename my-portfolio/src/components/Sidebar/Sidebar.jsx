@@ -1,24 +1,24 @@
-import * as React from 'react';
-import PropTypes from 'prop-types';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import CssBaseline from '@mui/material/CssBaseline';
-import Divider from '@mui/material/Divider';
-import Drawer from '@mui/material/Drawer';
-import IconButton from '@mui/material/IconButton';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemIcon from '@mui/material/ListItemIcon';
+import * as React from "react";
+import PropTypes from "prop-types";
+import AppBar from "@mui/material/AppBar";
+import Box from "@mui/material/Box";
+import CssBaseline from "@mui/material/CssBaseline";
+import Divider from "@mui/material/Divider";
+import Drawer from "@mui/material/Drawer";
+import IconButton from "@mui/material/IconButton";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import ListItemIcon from "@mui/material/ListItemIcon";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 import LightModeIcon from "@mui/icons-material/LightMode";
 import "../../App.css";
-import './Sidebar.css'
-import MenuIcon from '@mui/icons-material/Menu';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import Routing from './Routing/Routing';
-import InfoList from './InfoList/InfoList';
-import SocialMedia from './socialmedia/SocialMedia';
+import "./Sidebar.css";
+import MenuIcon from "@mui/icons-material/Menu";
+import Toolbar from "@mui/material/Toolbar";
+import Typography from "@mui/material/Typography";
+import Routing from "./Routing/Routing";
+import InfoList from "./InfoList/InfoList";
+import SocialMedia from "./socialmedia/SocialMedia";
 
 const drawerWidth = 245;
 
@@ -35,26 +35,23 @@ function Sidebar(props) {
   const drawer = (
     <div>
       <div className="sidebar-header text-center mt-5 ">
-        <h2>
-        My Portfolio
-        </h2>
-           </div>
+        <h2>My Portfolio</h2>
+      </div>
       <Toolbar />
-      
+
       <Divider />
       <List>
-         <InfoList />
-        <ListItem disablePadding  >
-          <button  
-          onClick={props.toggleTheme} className="icon mt-5  btn">
-            <ListItemIcon >
+        <InfoList />
+        <ListItem disablePadding>
+          <button onClick={props.toggleTheme} className=" mt-5  btn">
+            <ListItemIcon>
               {props.theme === "dark" ? (
-                <DarkModeIcon className='mx-1 '   />
+                <DarkModeIcon className="mx-1 list-btn " />
               ) : (
-                <LightModeIcon className='mx-1' />
+                <LightModeIcon className="mx-1 list-btn" />
               )}
-              <div className='mx-2'>
-              {props.theme === "dark" ? "Light Mode" : "Dark Mode"}
+              <div className="mx-2 list-btn">
+                {props.theme === "dark" ? "Light Mode" : "Dark Mode"}
               </div>
             </ListItemIcon>
           </button>
@@ -64,15 +61,15 @@ function Sidebar(props) {
     </div>
   );
 
-  const container = window !== undefined ? () => window().document.body : undefined;
+  const container =
+    window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box sx={{ display: 'flex' }}>
+    <Box sx={{ display: "flex" }}>
       <CssBaseline />
       <AppBar
         className="nav-bar"
-      style={{boxShadow:"none"}}
-
+        style={{ boxShadow: "none" }}
         position="fixed"
         sx={{
           width: { sm: `calc(100% - ${drawerWidth}px)` },
@@ -85,12 +82,12 @@ function Sidebar(props) {
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: 'none' } }}
+            sx={{ mr: 2, display: { sm: "none" } }}
           >
             <MenuIcon />
           </IconButton>
           {/* <Typography variant="h6" noWrap component="div"> */}
-          <div className='w-100'>
+          <div className="w-100">
             <SocialMedia />
           </div>
           {/* </Typography> */}
@@ -112,8 +109,11 @@ function Sidebar(props) {
             keepMounted: true, // Better open performance on mobile.
           }}
           sx={{
-            display: { xs: 'block', sm: 'none' },
-            '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
+            display: { xs: "block", sm: "none" },
+            "& .MuiDrawer-paper": {
+              boxSizing: "border-box",
+              width: drawerWidth,
+            },
           }}
         >
           {drawer}
@@ -121,8 +121,11 @@ function Sidebar(props) {
         <Drawer
           variant="permanent"
           sx={{
-            display: { xs: 'none', sm: 'block' },
-            '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
+            display: { xs: "none", sm: "block" },
+            "& .MuiDrawer-paper": {
+              boxSizing: "border-box",
+              width: drawerWidth,
+            },
           }}
           open
         >
@@ -132,7 +135,11 @@ function Sidebar(props) {
       <Box
         className="main"
         component="main"
-        sx={{ flexGrow: 1, p: 3, width: { sm: `calc(100% - ${drawerWidth}px)` } }}
+        sx={{
+          flexGrow: 1,
+          p: 3,
+          width: { sm: `calc(100% - ${drawerWidth}px)` },
+        }}
       >
         <Toolbar />
         <Routing theme={props.theme} />

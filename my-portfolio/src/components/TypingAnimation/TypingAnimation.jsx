@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import DownloadResume from "../DownloadResume/DownloadResume";
 
 const TypingAnimation = () => {
-  const words = ["I'm Hamza Naeem Khan", "I'm Frontend Developer!"];
+  const words = ["I'm Hamza Naeem Khan", "I'm Web Developer!"];
   const [text, setText] = useState("");
   const [i, setI] = useState(0);
   const [offset, setOffset] = useState(0);
@@ -44,8 +44,6 @@ const TypingAnimation = () => {
     return () => clearInterval(interval);
   }, [words, i, offset, forwards, skipCount]);
 
-
-
   return (
     <div>
       <div className="row">
@@ -55,15 +53,14 @@ const TypingAnimation = () => {
           <div>
             <h4 className="">based in Pakistan, Karachi </h4>
           </div>
-          <div className="d-flex"> 
-          <div className=" mt-5 hire">
-            <Link style={{ textDecoration: "none" }} to="/contact">
-              <button className="btn-hire">Hire Me</button>
-            </Link>
+          <div className="d-flex">
+            <div className=" mt-5 hire">
+              <Link style={{ textDecoration: "none" }} to="/contact">
+                <button className="btn-hire">Hire Me</button>
+              </Link>
+            </div>
+            <DownloadResume />
           </div>
-          <DownloadResume />
-          </div>
-         
         </div>
         <div className=" col-lg-4 col-md-12 col-sm-12 ">
           <img
