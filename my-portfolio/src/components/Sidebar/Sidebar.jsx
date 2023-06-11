@@ -20,7 +20,7 @@ import Routing from "./Routing/Routing";
 import InfoList from "./InfoList/InfoList";
 import SocialMedia from "./socialmedia/SocialMedia";
 
-const drawerWidth = 245;
+const drawerWidth = 235;
 
 function Sidebar(props) {
   console.log(props);
