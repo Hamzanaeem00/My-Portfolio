@@ -71,9 +71,11 @@ function Sidebar(props) {
         className="nav-bar"
         style={{ boxShadow: "none" }}
         position="fixed"
+
         sx={{
           width: { sm: `calc(100% - ${drawerWidth}px)` },
           ml: { sm: `${drawerWidth}px` },
+         
         } }
       >
         <Toolbar>
