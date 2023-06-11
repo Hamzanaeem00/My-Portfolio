@@ -6,7 +6,7 @@ import redux from '../../assets/Redux.png'
 import mui from '../../assets/Mui.png'
 import antd from '../../assets/AntD.png'
 import firebase from '../../assets/Firebase.png'
-import pakauto from '../../assets/Pak auto.png'
+import pakauto from '../../assets/Pakauto.png'
 
 
 const WorkExperience = () => {
