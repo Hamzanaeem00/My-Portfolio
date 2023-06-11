@@ -1,0 +1,19 @@
+.con-input{
+    height: 50px;
+    border-radius: 8px;
+    border: none !important;
+}
+.con-text{
+    height: 100px !important;
+    border: none !important;
+}
+
+::placeholder{
+    color: grey !important;
+}
+.form-control:focus {
+    border: 1px solid #ced4da;
+    border-color: 2px solid #80bdff!important;
+    /* border: 4px solid #80bdff; */
+    box-shadow: 0 0 5px rgba(128,189,255,.5) !important ;
+}

@@ -1,12 +1,11 @@
 .list-btn {
   color: #dee2e6;
   border: none;
-  background: none;
+  background: none; 
 }
 .list-btn:hover {
   color: #1baa80;
   border-radius: 4px;
-  opacity: 0.5px;
 }
 .icon {
   color: #dee2e6;

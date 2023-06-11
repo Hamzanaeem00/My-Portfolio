@@ -51,7 +51,7 @@ const InfoList = () => {
   const location = useLocation();
   var display = {
     backgroundColor: "#19AA80",
-    color: "#19AA80",
+    color: "#fff",
     height: "45px",
     borderRadius: "4px",
     padding: "8px",

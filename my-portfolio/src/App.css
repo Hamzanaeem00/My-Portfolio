@@ -124,3 +124,10 @@ body {
 #dark .para {
   font-weight: 100 !important;
 }
+#dark .con-input {
+  background-color: #232A31;
+}
+#dark .con-text {
+  background-color: #232A31;
+}
+
