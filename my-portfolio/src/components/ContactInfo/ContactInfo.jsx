@@ -41,7 +41,7 @@ const ContactInfo = () => {
         </a>
       </div>
       <div className=''>
-      <a className='mx-2 socail-icon ' style={{color:"#aab1b8"}}  href="https://github.com/Hamzanaeem00 " target="_blank" rel="noreferrer">
+      <a className='mx-2 socail-icon ' style={{color:"#aab1b8"}}  href="https://twitter.com/webdeveloper003" target="_blank" rel="noreferrer">
         <GitHubIcon />
         </a>
         
