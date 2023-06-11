@@ -29,7 +29,7 @@ const ContactInfo = () => {
             FOLLOW ME
         </h3>
       </div>
-      <div className='d-flex '>
+      <div className='d-flex mb-5 '>
       <div className=''>
       <a className='mx-2' style={{color:"#aab1b8"}} href="https://www.facebook.com/hamzanaeem.khan.184/" target="_blank" rel="noreferrer">
         <FacebookRoundedIcon />

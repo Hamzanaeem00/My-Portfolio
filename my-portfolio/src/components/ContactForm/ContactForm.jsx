@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./ContactForm.css";
+import axios from "axios";
 import ContactInfo from "../ContactInfo/ContactInfo";
 
 const ContactForm = () => {
@@ -8,8 +9,6 @@ const ContactForm = () => {
     email: "",
     message: "",
   });
-  const [data , setData] = useState([])
-  console.log(data);
 
   const handleChange = (e) => {
     const value = e.target.value;
@@ -18,9 +17,22 @@ const ContactForm = () => {
       [e.target.name]: value,
     });
   };
-  const handleSubmit = (e) => {
+  const handleSubmit =  (e) => {
     e.preventDefault();
-    setData([formData])
+    fetch(
+      "https://restaurant-data-5fe4f-default-rtdb.firebaseio.com/FoodCards.json",
+
+      {
+        method: "POST",
+        body: JSON.stringify(formData),
+        headers: {
+          "Content-type": "application/json",
+        },
+      }
+    ).then(() => {
+      toast.success("Submitted Successfully");
+    });
+    setFormData("")
   };
   return (
     <div className="row">
