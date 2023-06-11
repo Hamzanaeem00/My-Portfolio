@@ -19,6 +19,13 @@ const EducationDetail = () => {
        details: "I have Completed my Intermediate in Pre-Engineering from Govt.Degree SRE Majeed.",
     },
     {
+      id: 4,
+       year: "2015-2015",
+       field: "Certificate",
+       uni: "Domino",
+       details: "I have Completed my English Language Course from Domino.",
+    },
+    {
       id: 3,
        year: "2003-2016",
        field: "Science",
