@@ -10,7 +10,6 @@ const EducationDetail = () => {
        field: "Bachelor Degree",
        uni: "University OF Karachi",
        details: "I have Completed My Graduation in Software Engineering from University of Karachi (UBIT).",
-       
     },
     {
       id: 2,
