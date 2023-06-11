@@ -35,7 +35,7 @@ function Sidebar(props) {
   const drawer = (
     <div>
       <div className="sidebar-header text-center mt-5 ">
-        <h2>My Portfolio</h2>
+        <h5>SOFTWARE ENGINEER</h5>
       </div>
       <Toolbar />
 
