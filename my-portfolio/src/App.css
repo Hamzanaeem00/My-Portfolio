@@ -137,6 +137,10 @@ body {
 #dark .form-control{
    color: #eaeaea;
 }
+#light .education{
+  background-color: transparent !important;
+  border: 1px solid rgb(225, 225, 225);
+}
 
 .css-4t3x6l-MuiPaper-root-MuiDrawer-paper {
   background-color: #242424 !important;
