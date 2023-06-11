@@ -3,7 +3,7 @@ import Introduction from '../../components/Introduction/Introduction'
 
 const About = () => {
   return (
-    <div>
+    <div className='mt-4'>
       <Introduction />
     </div>
   )

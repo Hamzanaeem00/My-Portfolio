@@ -8,9 +8,7 @@ const Home = () => {
       <div>
         <span className="introduction w-100 mb-0 my-3">INTRODUCTION</span>
       </div>
-      <div className="mx-3  ">
       <TypingAnimation />
-      </div>
     </div>
   );
 };

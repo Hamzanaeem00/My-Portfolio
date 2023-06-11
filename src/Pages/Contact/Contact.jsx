@@ -4,7 +4,7 @@ import ContactForm from "../../components/ContactForm/ContactForm";
 const Contact = () => {
   return (
     <div>
-       <div className="">
+       <div className="mt-4">
         <span className="experiences  w-100 mb-0">CONTACT</span>
         <p
           className=" know-me w-100 text-center mb-0 mt-3 position-sticky bottom-100"
