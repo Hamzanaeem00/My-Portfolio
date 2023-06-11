@@ -18,7 +18,7 @@ const ContactInfo = () => {
           0334-3177400
          </span>
       </div>
-      <div className='mt-1'>
+      <div className='mt-2'>
         <MailIcon className='con-icons'/>
         <span className='mx-1 text-center'>hamzanaeemkhan977</span>
         <p className='mx-3'>@gmail.com</p>
