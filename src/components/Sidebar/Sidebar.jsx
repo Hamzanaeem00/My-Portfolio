@@ -33,7 +33,7 @@ function Sidebar(props) {
   };
 
   const drawer = (
-    <div>
+    <div className="drawer">
       <div className="sidebar-header text-center mt-5 ">
         <h5>SOFTWARE ENGINEER</h5>
       </div>
@@ -102,7 +102,7 @@ function Sidebar(props) {
         aria-label="mailbox folders"
       >
         {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
-        <Drawer
+        <Drawer 
           container={container}
           variant="temporary"
           open={mobileOpen}

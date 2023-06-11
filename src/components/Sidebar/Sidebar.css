@@ -1,7 +1,8 @@
 .icon {
   color: #dee2e6 !important;
 }
-.css-4t3x6l-MuiPaper-root-MuiDrawer-paper {
+.drawer {
   background-color: #242424 !important;
   color: #fff !important;
+  height: 100vh !important;
 }
