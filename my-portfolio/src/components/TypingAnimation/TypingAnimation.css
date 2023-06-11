@@ -12,7 +12,7 @@
 .btn-hire {
   border-color: #20c997;
   color: #20c997;
-  font-weight: 600;
+  font-weight: 400;
   padding: 0.8rem 2.6rem;
   /* transition: all 0.5s ease-in; */
   background: none;
@@ -23,7 +23,7 @@
   background-color: #20c997;
   transition: all 0.1s ease;
   border-radius: 50rem;
-  font-weight: 600;
+  font-weight: 400;
   color: #fff;
 }
 .hire {

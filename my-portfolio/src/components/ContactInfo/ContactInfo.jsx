@@ -8,8 +8,8 @@ import './ContactInfo.css'
 
 const ContactInfo = () => {
   return (
-    <div>
-      <div className='mt-2'>
+    <div className='mx-3' >
+      <div className='mt-2 '>
         <h3>CATCH ME HERE</h3>
       </div>
       <div className='mt-4'>

@@ -14,6 +14,11 @@
 .form-control:focus {
     border: 1px solid #ced4da;
     border-color: 2px solid #80bdff!important;
-    /* border: 4px solid #80bdff; */
     box-shadow: 0 0 5px rgba(128,189,255,.5) !important ;
+}
+
+.send-btn > button:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,.3);
+    transition: all .5s ease;
+    background:#1a8766 !important;
 }
