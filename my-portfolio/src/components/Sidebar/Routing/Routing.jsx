@@ -6,6 +6,7 @@ import Exprience from '../../../Pages/Experience/Exprience'
 import Contact from '../../../Pages/Contact/Contact'
 import Home from '../../../Pages/Home/Home'
 import About from '../../../Pages/About/About'
+import Education from '../../../Pages/Education/Education'
 
 
 
@@ -19,6 +20,8 @@ const Routing = ({theme}) => {
             <Route path="/experience" element = {<Exprience />} ></Route>
             <Route path="/contact" element = {<Contact />} ></Route>
             <Route path="/about" element = {<About />} ></Route>
+            <Route path="/education" element = {<Education />} ></Route>
+
 
 
         </Routes>

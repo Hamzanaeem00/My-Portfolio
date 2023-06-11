@@ -5,6 +5,7 @@ import AssistantIcon from "@mui/icons-material/Assistant";
 import EngineeringIcon from "@mui/icons-material/Engineering";
 import EmailIcon from "@mui/icons-material/Email";
 import BungalowIcon from "@mui/icons-material/Bungalow";
+import SchoolIcon from '@mui/icons-material/School';
 import { Link, useLocation } from "react-router-dom";
 import "./InfoList.css";
 
@@ -21,6 +22,12 @@ const list = [
     url: "/about",
     icon: <InfoIcon />,
     text: "About",
+  },
+  {
+    id: 7,
+    url: "/education",
+    icon: <SchoolIcon />,
+    text: "Education",
   },
   {
     id: 4,

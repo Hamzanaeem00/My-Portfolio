@@ -74,7 +74,7 @@ function Sidebar(props) {
         sx={{
           width: { sm: `calc(100% - ${drawerWidth}px)` },
           ml: { sm: `${drawerWidth}px` },
-        }}
+        } }
       >
         <Toolbar>
           <IconButton
@@ -109,7 +109,7 @@ function Sidebar(props) {
             keepMounted: true, // Better open performance on mobile.
           }}
           sx={{
-            display: { xs: "block", sm: "none" },
+            display: { xs: "block", sm: "none"  },
             "& .MuiDrawer-paper": {
               boxSizing: "border-box",
               width: drawerWidth,
