@@ -29,7 +29,7 @@ const Introduction = () => {
            a Web Developer
         </h2>
         <p className="para ">
-        Experienced Frontend React.js Developer with 1+ years of expertise and a proven track record of meeting deadlines and exceeding expectations. Successfully completed over 7 projects, showcasing proficiency in React.js, HTML, CSS, and JavaScript. A dedicated learner, always seeking to adopt new skills and technologies.
+        Experienced Frontend React.js Developer with 1+ years of expertise and a proven track record of meeting deadlines and exceeding expectations. Successfully completed over 10+ projects, showcasing proficiency in React.js, HTML, CSS, and JavaScript. A dedicated learner, always seeking to adopt new skills and technologies.
         </p>
         <p className="para">
         Collaborative and adaptable, committed to delivering high-quality work that aligns with business objectives. Passionate about creating engaging user interfaces and staying up-to-date with industry best practices. Ready to contribute expertise to drive innovation and success in future projects.
