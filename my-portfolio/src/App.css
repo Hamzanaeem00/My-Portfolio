@@ -126,8 +126,15 @@ body {
 }
 #dark .con-input {
   background-color: #232A31;
+  border-color: #232A31;
+
 }
 #dark .con-text {
   background-color: #232A31;
+  border: #232A31;
+}
+
+#dark .form-control{
+   color: #eaeaea;
 }
 

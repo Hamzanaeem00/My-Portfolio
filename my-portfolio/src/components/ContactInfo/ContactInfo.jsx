@@ -30,14 +30,21 @@ const ContactInfo = () => {
         </h3>
       </div>
       <div className='d-flex '>
-      <div className='mx-2'>
+      <div className=''>
+      <a className='mx-2' style={{color:"#aab1b8"}} href="https://www.facebook.com/hamzanaeem.khan.184/" target="_blank" rel="noreferrer">
         <FacebookRoundedIcon />
+        </a>
       </div>
       <div className='mx-2'>
+      <a className='mx-2 socail-icon ' style={{color:"#aab1b8"}}  href="https://github.com/Hamzanaeem00 " target="_blank" rel="noreferrer">
         <TwitterIcon />
+        </a>
       </div>
-      <div className='mx-2'>  
+      <div className=''>
+      <a className='mx-2 socail-icon ' style={{color:"#aab1b8"}}  href="https://github.com/Hamzanaeem00 " target="_blank" rel="noreferrer">
         <GitHubIcon />
+        </a>
+        
       </div>
       </div>
     </div>

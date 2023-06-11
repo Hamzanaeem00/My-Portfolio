@@ -1,11 +1,11 @@
 .con-input{
     height: 50px;
     border-radius: 8px;
-    border: none !important;
+    /* border: none !important; */
 }
 .con-text{
     height: 100px !important;
-    border: none !important;
+    /* border: none !important; */
 }
 
 ::placeholder{
