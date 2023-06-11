@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./ContactForm.css";
 import ContactInfo from "../ContactInfo/ContactInfo";
+import { toast } from "react-toastify";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -8,6 +9,7 @@ const ContactForm = () => {
     email: "",
     message: "",
   });
+  // console.log(formData);
 
   const handleChange = (e) => {
     const value = e.target.value;
@@ -18,8 +20,8 @@ const ContactForm = () => {
   };
   const handleSubmit =  (e) => {
     e.preventDefault();
-    fetch(
-      "https://restaurant-data-5fe4f-default-rtdb.firebaseio.com/FoodCards.json",
+    const newData = fetch(
+      "https://restaurant-data-5fe4f-default-rtdb.firebaseio.com/Contacts.json",
 
       {
         method: "POST",
@@ -29,9 +31,14 @@ const ContactForm = () => {
         },
       }
     ).then(() => {
+      console.log(newData);
       toast.success("Submitted Successfully");
     });
-    setFormData("")
+    setFormData({
+      name: "",
+      email: "",
+      message: "",
+    });
   };
   return (
     <div className="row">
@@ -47,9 +54,10 @@ const ContactForm = () => {
             <div className="col-lg-6 col-md-12 col-sm-12 ">
               <input
                 className="col-lg-12 col-sm-12 col-md-12 con-input form-control mt-3"
+                type="text"
                 placeholder="Name"
                 name="name"
-                // value={formData.name}
+                value={formData.name}
                 onChange={handleChange}
               />
             </div>
