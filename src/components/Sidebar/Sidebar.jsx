@@ -48,7 +48,7 @@ function Sidebar(props) {
       <Divider />
       <List>
         <InfoList handleDrawerClose={handleDrawerClose} />
-        <ListItem disablePadding>
+        <ListItem disablePadding onClick={handleDrawerClose}>
           <button onClick={props.toggleTheme} className=" mt-5  btn">
             <ListItemIcon>
               {props.theme === "dark" ? (
