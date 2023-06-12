@@ -5,7 +5,7 @@ import AssistantIcon from "@mui/icons-material/Assistant";
 import EngineeringIcon from "@mui/icons-material/Engineering";
 import EmailIcon from "@mui/icons-material/Email";
 import BungalowIcon from "@mui/icons-material/Bungalow";
-import SchoolIcon from '@mui/icons-material/School';
+import SchoolIcon from "@mui/icons-material/School";
 import { Link, useLocation } from "react-router-dom";
 import "./InfoList.css";
 
@@ -54,7 +54,7 @@ const list = [
     text: "Contact",
   },
 ];
-const InfoList = () => {
+const InfoList = ({ handleDrawerClose }) => {
   const location = useLocation();
   var display = {
     backgroundColor: "#19AA80",
@@ -65,7 +65,7 @@ const InfoList = () => {
   };
 
   return (
-    <div>
+    <div onClick={handleDrawerClose}>
       {list?.map((item, i) => {
         return (
           <div

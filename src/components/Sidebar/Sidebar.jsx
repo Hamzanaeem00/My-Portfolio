@@ -15,10 +15,10 @@ import "../../App.css";
 import "./Sidebar.css";
 import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
 import Routing from "./Routing/Routing";
 import InfoList from "./InfoList/InfoList";
 import SocialMedia from "./socialmedia/SocialMedia";
+import { useMediaQuery } from "@mui/material";
 
 const drawerWidth = 235;
 
@@ -26,10 +26,16 @@ function Sidebar(props) {
   console.log(props);
 
   const { window } = props;
+  const isMobile = useMediaQuery("(max-width: 600px)");
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
+  };
+  const handleDrawerClose = () => {
+    if (isMobile) {
+      setMobileOpen(false);
+    }
   };
 
   const drawer = (
@@ -41,7 +47,7 @@ function Sidebar(props) {
 
       <Divider />
       <List>
-        <InfoList />
+        <InfoList handleDrawerClose={handleDrawerClose} />
         <ListItem disablePadding>
           <button onClick={props.toggleTheme} className=" mt-5  btn">
             <ListItemIcon>
@@ -71,12 +77,10 @@ function Sidebar(props) {
         className="nav-bar"
         style={{ boxShadow: "none" }}
         position="fixed"
-
         sx={{
           width: { sm: `calc(100% - ${drawerWidth}px)` },
           ml: { sm: `${drawerWidth}px` },
-         
-        } }
+        }}
       >
         <Toolbar>
           <IconButton
@@ -102,7 +106,7 @@ function Sidebar(props) {
         aria-label="mailbox folders"
       >
         {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
-        <Drawer 
+        <Drawer
           container={container}
           variant="temporary"
           open={mobileOpen}
@@ -111,7 +115,7 @@ function Sidebar(props) {
             keepMounted: true, // Better open performance on mobile.
           }}
           sx={{
-            display: { xs: "block", sm: "none"  },
+            display: { xs: "block", sm: "none" },
             "& .MuiDrawer-paper": {
               boxSizing: "border-box",
               width: drawerWidth,
