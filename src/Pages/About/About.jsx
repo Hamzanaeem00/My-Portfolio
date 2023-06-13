@@ -1,12 +1,12 @@
-import React from 'react'
-import Introduction from '../../components/Introduction/Introduction'
+import React from "react";
+import Introduction from "../../components/Introduction/Introduction";
 
 const About = () => {
   return (
-    <div className='mt-4'>
+    <div>
       <Introduction />
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;

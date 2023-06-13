@@ -1,9 +1,9 @@
-.introduction{
-    font-weight: 1000;
-  font-size: 34px;
-  letter-spacing: 5px;
+.introduction {
+  font-weight: 1000;
+  font-size: 41px;
+  letter-spacing: 3px;
   display: flex;
-  opacity: 0.4;
+  opacity: 0.7;
   justify-content: center;
   color: #dee3e4;
 }

@@ -48,7 +48,7 @@ const TypingAnimation = () => {
     <div>
       <div className="row">
         <div className="col-lg-8 col-md-12 col-sm-12">
-          <h4 className="">Welcome 👋</h4>
+          <h4 className="mt-4">Welcome 👋</h4>
           <span className="word ">{text}</span>
           <div>
             <h4 className="">based in Pakistan, Karachi </h4>

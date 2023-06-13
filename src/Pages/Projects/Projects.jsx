@@ -1,17 +1,15 @@
-import React from 'react'
-import MyProjects from '../../components/MyProjects/MyProjects'
+import React from "react";
+import MyProjects from "../../components/MyProjects/MyProjects";
 
-const Projects = ({theme}) => {
+const Projects = ({ theme }) => {
   return (
     <div>
-      <div className=",mt-4">
+      <div className="">
         <span className="experiences  w-100 mb-0">PROJECTS</span>
-        <p
-          className=" know-me w-100 text-center mb-0 mt-3 position-sticky bottom-100"
-        >
+        <p className=" know-me w-100 text-center mb-0 my-2">
           My Work
           <p
-            className="  border-bottom border-3 border-success mx-auto"
+            className=" border-bottom border-3 border-success mx-auto"
             style={{ width: "80px" }}
           ></p>
         </p>
@@ -20,7 +18,7 @@ const Projects = ({theme}) => {
         <MyProjects theme={theme} />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;

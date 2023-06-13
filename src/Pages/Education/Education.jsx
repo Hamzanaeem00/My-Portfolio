@@ -1,14 +1,12 @@
-import React from 'react'
-import EducationDetail from '../../components/EducationDetail/EducationDetail'
+import React from "react";
+import EducationDetail from "../../components/EducationDetail/EducationDetail";
 
 const Education = () => {
   return (
-    <div >
-    <div className='mt-4'>
+    <div>
+      <div>
         <span className="experiences  w-100 mb-0">SUMMARY</span>
-        <p
-          className=" know-me w-100 text-center mb-0 mt-3 position-sticky bottom-100"
-        >
+        <p className=" know-me w-100 text-center mb-0 my-2">
           Education
           <p
             className="  border-bottom border-3 border-success mx-auto"
@@ -20,7 +18,7 @@ const Education = () => {
         <EducationDetail />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Education
+export default Education;

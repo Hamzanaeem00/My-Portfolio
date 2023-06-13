@@ -125,22 +125,27 @@ body {
   font-weight: 100 !important;
 }
 #dark .con-input {
-  background-color: #232A31;
-  border-color: #232A31;
-
+  background-color: #232a31;
+  border-color: #232a31;
 }
 #dark .con-text {
-  background-color: #232A31;
-  border: #232A31;
+  background-color: #232a31;
+  border: #232a31;
 }
 
-#dark .form-control{
-   color: #eaeaea;
+#dark .form-control {
+  color: #eaeaea;
 }
-#light .education{
+#light .education {
   background-color: transparent !important;
   border: 1px solid rgb(225, 225, 225);
 }
-
-
-
+#light .experiences {
+  color: #000000 !important;
+}
+#light .about-me {
+  color: #000000 !important;
+}
+#light .introduction {
+  color: #000000 !important;
+}
